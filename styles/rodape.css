@@ -43,6 +43,10 @@ hr{
         color: var(--cinza);
         margin-left: 0.6em;
     }
+
+    .lista-rodapé__link:hover{
+        text-decoration: underline;
+    }
     
 }
 

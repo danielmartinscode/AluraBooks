@@ -24,6 +24,14 @@
     display: none;
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer{
+    background-image: url(../img/menuaberto.svg);
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul-degrade);
+}
+
 .container__imagem{
     padding: 1em;
 }
@@ -89,6 +97,15 @@
         display: flex;
     }
 
+    .opções__botão:checked ~ .opções__rotulo > .opções__item{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opções .opções__item{
+        padding: 2em 1em;
+    }
+
     .opções__item{
         padding: 0 1em;
         text-transform: uppercase;
@@ -114,6 +131,14 @@
 
     .opções__botão{
         display: none;
+    }
+
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link{
+        color: var(--branco);
     }
 
 @media screen and (min-width:1728px){

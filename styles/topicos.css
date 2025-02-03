@@ -40,6 +40,10 @@
     .tópicos__link{
         font-size: 24px;
     }
+
+    .tópicos__link:hover{
+        border: 3px solid var(--branco);
+    }
     
 }
 
